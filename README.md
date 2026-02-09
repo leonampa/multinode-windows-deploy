@@ -46,7 +46,7 @@ diskpart
 list disk  
 list volume (to identify drive letters - from now on, D:, and all flash drives containing the .wim file later on, are “Image” flash drives. It's important for the flash drive to be exFAT or NTFS, not FAT32, due to the 4GB file restriction)  
 exit  
-dism /Capture-Image /ImageFile:D:\\install.wim /CaptureDir:C:\\ /Name:GoldenImage  
+dism /Capture-Image /ImageFile:D:\install.wim /CaptureDir:C:\ /Name:GoldenImage  
 ~~~
 
 And after that, I shut down the PC, and set it aside.
