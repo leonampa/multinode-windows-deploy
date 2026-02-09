@@ -55,7 +55,7 @@ NOTE: You can bypass A.3, Step 8, and a tedious part of the deployment process, 
 
 ## **A.3: How will I deploy the Golden Image to the computers?**
 
-I had to deploy the .wim file to the computers, and I needed a quick, low effort way to do so. I boot off the Installer flash drive, open the command prompt, and run deploy.cmd, available in the GitHub repository. After a LOT of back and forth with Gemini 3, I reached the final version of the deploy.cmd file that, when run, it
+I had to deploy the .wim file to the computers, and I needed a quick, low effort way to do so. I boot off the Installer flash drive, open the command prompt, and run deploy.bat, available in the GitHub repository. After a LOT of back and forth with Gemini 3, I reached the final version of the deploy.bat file that, when run, it
 
 1. Exits diskpart
 2. Runs list disk (to identify the drive for Windows to be deployed to)
@@ -69,7 +69,7 @@ I had to deploy the .wim file to the computers, and I needed a quick, low effort
 The moment it reboots to OOBE, I pull out the Image and Installer flash drives.
 
 After that's done, I go to the user (made-on-installation), delete the deleteme user, and activate Windows and Office.  
-And that's it! I repeat A.3 for every PC I want to deploy. I, personally, keep the two files (deploy.cmd and install.wim) on my toolkit any time, since they're useful for reviving old PCs.
+And that's it! I repeat A.3 for every PC I want to deploy. I, personally, keep the two files (deploy.bat and install.wim) on my toolkit any time, since they're useful for reviving old PCs.
 
 # **Phase B: What do I do for more PCs?**
 
